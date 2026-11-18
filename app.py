@@ -6,7 +6,7 @@ st.title("ABC Bank Customer Service")
 
 # 1. Connect to OpenRouter safely via Streamlit Secrets
 api_key = st.secrets.get("OPENROUTER_API_KEY", os.environ.get("OPENROUTER_API_KEY", "YOUR_OPENROUTER_API_KEY_HERE"))
-client = OpenAI(api_key=api_key, base_url="https://openrouter.ai")
+client = OpenAI(api_key=api_key, base_url="https://openrouter.ai" + "/api/v1")
 
 # 2. Define Main Menu and Sub-Menu Categories
 SUB_MENUS = {
