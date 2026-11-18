@@ -158,4 +158,3 @@ else:
     if prompt := st.chat_input("Or type your question here..."):
         handle_selection(prompt)
         st.rerun()
-
